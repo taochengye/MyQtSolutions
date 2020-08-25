@@ -34,9 +34,9 @@
 
 .vs
 ./.vs/*
-x64/*
 ./MyQtSolutions/.vs/*
 MyQtSolutions/.vs/*
+MyQtSolutions/x64/*
 
 
 ./MyQtSolutions/.vs/*
