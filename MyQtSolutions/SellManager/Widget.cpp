@@ -413,7 +413,6 @@ void Widget::on_sellOkBtn_clicked()
 }
 
 
-
 void Widget::on_sellCancelBtn_clicked()
 {
 	ui.sellFactoryComboBox->setCurrentIndex(0);
