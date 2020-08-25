@@ -27,6 +27,11 @@
 *.lib
 
 # Executables
-*.exe
+#*.exe
 *.out
 *.app
+
+
+./MyQtSolutions/.vs/*
+./MyQtSolutions/x64/*
+./MyQtSolutions/SellManager/x64/*
