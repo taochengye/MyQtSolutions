@@ -44,6 +44,9 @@
     <ClCompile Include="PieView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LoginDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="connection.h">
@@ -54,9 +57,15 @@
     <QtMoc Include="PieView.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="LoginDialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="PieView.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="LoginDialog.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

@@ -1,6 +1,7 @@
 #include "Widget.h"
 #include <QtWidgets/QApplication>
 #include "connection.h"
+#include "LoginDialog.h"
 
 
 int main(int argc, char *argv[])
@@ -11,6 +12,14 @@ int main(int argc, char *argv[])
 		return 0;
 
     Widget w;
-    w.show();
-    return a.exec();
+	LoginDialog dlg;
+	if (dlg.exec() == QDialog::Accepted)
+	{
+		w.show();
+		return a.exec();
+	}
+	else
+		return 0;
+
+
 }

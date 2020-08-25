@@ -96,17 +96,17 @@ void PieView::paintEvent(QPaintEvent *)
 	painter.drawLine(x0, y0, 40, 30);
 	painter.drawLine(38, 32, 40, 30);
 	painter.drawLine(40, 30, 42, 32);
-	painter.drawText(20, 30, QString::fromLocal8Bit("销售数量"));
+	painter.drawText(20, 26, QString::fromLocal8Bit("销售数量"));
 	for (int i = 1; i < 5; i++)
 	{
 		painter.drawLine(-1, -i * 50, 1, -i * 50);
 		painter.drawText(-20, -i * 50, tr("%1").arg(i * 5));
 	}
 	//x坐标轴
-	painter.drawLine(x0, y0, 540, 250);
-	painter.drawLine(538, 248, 540, 250);
-	painter.drawLine(540, 250, 538, 252);
-	painter.drawText(545, 250, QString::fromLocal8Bit("品牌"));
+	painter.drawLine(x0, y0, 420, 250);
+	painter.drawLine(418, 248, 420, 250);
+	painter.drawLine(420, 250, 418, 252);
+	painter.drawText(425, 250, QString::fromLocal8Bit("品牌"));
 
 	int pos = x0 + 20;
 	int row;

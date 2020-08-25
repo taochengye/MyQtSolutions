@@ -42,6 +42,9 @@ static bool createConnection()
 	ret = query.exec(QString::fromLocal8Bit("insert into brand values('08', '桑塔纳', '上海大众', 25, 75, 25, 50)"));
 	ret = query.exec(QString::fromLocal8Bit("insert into brand values('09', '帕萨特', '上海大众', 27, 65, 20, 45)"));
 
+	ret = query.exec(QString::fromLocal8Bit("create table if not exists password(pwd varchar primary key)"));
+	ret = query.exec(QString::fromLocal8Bit("insert into password values('123456')"));
+
 	return true;
 }
 

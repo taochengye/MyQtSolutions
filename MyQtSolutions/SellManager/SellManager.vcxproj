@@ -86,15 +86,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <QtRcc Include="Widget.qrc" />
+    <QtUic Include="LoginDialog.ui" />
     <QtUic Include="PieView.ui" />
     <QtUic Include="Widget.ui" />
     <QtMoc Include="Widget.h" />
+    <ClCompile Include="LoginDialog.cpp" />
     <ClCompile Include="PieView.cpp" />
     <ClCompile Include="Widget.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="connection.h" />
+    <QtMoc Include="LoginDialog.h" />
     <QtMoc Include="PieView.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

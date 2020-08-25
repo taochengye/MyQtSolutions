@@ -27,7 +27,7 @@ Widget::~Widget()
 
 void Widget::InitUI()
 {
-	this->setFixedSize(750, 500);
+	this->setFixedSize(800, 500);
 	ui.stackedWidget->setCurrentIndex(0);
 
 	//QSqlQueryModel* factoryModel = new QSqlQueryModel(this);
@@ -37,13 +37,16 @@ void Widget::InitUI()
 
 	QSplitter *splitter = new QSplitter(ui.managePage);
 	splitter->resize(700, 360);
-	splitter->move(0, 50);
+	splitter->move(10, 70);
 	splitter->addWidget(ui.toolBox);
 	splitter->addWidget(ui.dailyList);
 	splitter->setStretchFactor(0, 1);
 	splitter->setStretchFactor(1, 1);
 
 	showDailyList();
+
+	ui.factoryComboBox->setModel(factoryModel);
+	createChartModelView();
 
 	//on_sellCancelBtn_clicked();
 }
@@ -219,22 +222,24 @@ void Widget::showDailyList()
 	}
 }
 
+
 void Widget::createChartModelView()
 {
 	chartModel = new QStandardItemModel(this);
 	chartModel->setColumnCount(2);
-	chartModel->setHeaderData(0, Qt::Horizontal, QString("品牌"));
-	chartModel->setHeaderData(1, Qt::Horizontal, QString("销售数量"));
+	chartModel->setHeaderData(0, Qt::Horizontal, QString::fromLocal8Bit("品牌"));
+	chartModel->setHeaderData(1, Qt::Horizontal, QString::fromLocal8Bit("销售数量"));
 
 	QSplitter *splitter = new QSplitter(ui.chartPage);
 	splitter->resize(700, 320);
-	splitter->move(0, 80);
+	splitter->move(20, 100);
 	QTableView *table = new QTableView;
+	QTableView *table2 = new QTableView;
 	PieView *pieChart = new PieView;
 	splitter->addWidget(table);
 	splitter->addWidget(pieChart);
-	splitter->setStretchFactor(0, 1);
-	splitter->setStretchFactor(1, 2);
+	splitter->setStretchFactor(0, 2);
+	splitter->setStretchFactor(1, 3);
 
 	table->setModel(chartModel);
 	pieChart->setModel(chartModel);
@@ -405,9 +410,8 @@ void Widget::on_sellOkBtn_clicked()
 	{
 		QSqlDatabase::database().rollback();
 	}
-
-
 }
+
 
 
 void Widget::on_sellCancelBtn_clicked()

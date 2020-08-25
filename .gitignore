@@ -32,6 +32,12 @@
 *.app
 
 
+.vs
+./.vs/*
+./MyQtSolutions/.vs/*
+MyQtSolutions/.vs/*
+
+
 ./MyQtSolutions/.vs/*
 ./MyQtSolutions/x64/*
 ./MyQtSolutions/SellManager/x64/*
