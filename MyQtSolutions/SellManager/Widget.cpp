@@ -1,3 +1,4 @@
+#include "..\MySelfQQ\Widget.h"
 #include "Widget.h"
 #include <QTableView>
 #include "PieView.h"
@@ -71,6 +72,10 @@ void Widget::createMenuBar()
 	
 }
 
+
+void Widget::Init()
+{
+}
 
 void Widget::connectSlots()
 {

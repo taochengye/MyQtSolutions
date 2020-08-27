@@ -2,6 +2,11 @@
 
 #include <QToolBox>
 #include <QToolButton>
+#include "Widget.h"
+#include <map>
+
+using namespace std;
+
 
 class Drawer : public QToolBox
 {
@@ -12,6 +17,19 @@ public:
 	~Drawer();
 
 	void InitUI();
+	void connectSlots();
+
+signals:
+	void ShowChatWidgetSignal(QString, const QIcon&);
+
+private slots:
+	void showChatWidget();
+
+	void showChatWidget1();
+	void showChatWidget2();
+	void showChatWidget3();
+
+	void deleteWgtPtr(QString windowFlag);
 
 private:
 	QToolButton *toolBtn1;
@@ -23,5 +41,12 @@ private:
 	QToolButton *toolBtn7;
 	QToolButton *toolBtn8;
 	QToolButton *toolBtn9;
+
+
+	map<QString, Widget*> widgetMap;
+
+	Widget* chatWidget1 = nullptr;
+	Widget* chatWidget2 = nullptr;
+	Widget* chatWidget3 = nullptr;
 
 };

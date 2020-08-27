@@ -1,13 +1,22 @@
 <RCC>
     <qresource prefix="/Widget">
-        <file>images/1.jpg</file>
-        <file>images/2.jpg</file>
-        <file>images/3.jpg</file>
-        <file>images/4.jpg</file>
-        <file>images/5.jpg</file>
-        <file>images/6.jpg</file>
-        <file>images/7.jpg</file>
-        <file>images/8.jpg</file>
-        <file>images/9.png</file>
+        <file>images/headportrait/1.jpg</file>
+        <file>images/headportrait/2.jpg</file>
+        <file>images/headportrait/3.jpg</file>
+        <file>images/headportrait/4.jpg</file>
+        <file>images/headportrait/5.jpg</file>
+        <file>images/headportrait/6.jpg</file>
+        <file>images/headportrait/7.jpg</file>
+        <file>images/headportrait/8.jpg</file>
+        <file>images/headportrait/9.png</file>
+        <file>images/字体/保存.png</file>
+        <file>images/字体/发送.png</file>
+        <file>images/字体/加粗.png</file>
+        <file>images/字体/清空.png</file>
+        <file>images/字体/删除.png</file>
+        <file>images/字体/下划线.png</file>
+        <file>images/字体/下划线2.png</file>
+        <file>images/字体/斜体.png</file>
+        <file>images/字体/斜体2.png</file>
     </qresource>
 </RCC>
