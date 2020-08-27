@@ -33,6 +33,8 @@ signals:
 
 private slots:
 	void processPendingDatagrams();
+	void on_sendBtn_clicked();
+	void on_exitBtn_clicked();
 
 protected:
 	void closeEvent(QCloseEvent* event);

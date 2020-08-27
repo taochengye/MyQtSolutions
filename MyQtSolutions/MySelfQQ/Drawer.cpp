@@ -22,11 +22,13 @@ void Drawer::InitUI()
 	setWindowIcon(QPixmap(":/images/qq.png"));		//	设置主窗体标题栏图标
 
 	
+	QSize head(75, 75);
+
 	toolBtn1 = new QToolButton;
 	toolBtn1->setText(QString::fromLocal8Bit("大牛"));
 	toolBtn1->setIcon(QPixmap(":/Widget/images/headportrait/1.jpg"));
 	//toolBtn1->setIconSize(QPixmap(":/Widget/images/headportrait/1.jpg").size());
-	toolBtn1->setIconSize(QSize(100, 100));
+	toolBtn1->setIconSize(head);
 	toolBtn1->setAutoRaise(true);
 	toolBtn1->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 
@@ -34,7 +36,7 @@ void Drawer::InitUI()
 	toolBtn2->setText(QString::fromLocal8Bit("大神"));
 	toolBtn2->setIcon(QPixmap(":/Widget/images/headportrait/2.jpg"));
 	//toolBtn2->setIconSize(QPixmap(":/Widget/images/headportrait/2.jpg").size());
-	toolBtn2->setIconSize(QSize(100, 100));
+	toolBtn2->setIconSize(head);
 	toolBtn2->setAutoRaise(true);
 	toolBtn2->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 
@@ -42,7 +44,7 @@ void Drawer::InitUI()
 	toolBtn3->setText(QString::fromLocal8Bit("大师"));
 	toolBtn3->setIcon(QPixmap(":/Widget/images/headportrait/3.jpg"));
 	//toolBtn3->setIconSize(QPixmap(":/Widget/images/headportrait/3.jpg").size());
-	toolBtn3->setIconSize(QSize(100, 100));
+	toolBtn3->setIconSize(head);
 	toolBtn3->setAutoRaise(true);
 	toolBtn3->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 
@@ -50,7 +52,7 @@ void Drawer::InitUI()
 	toolBtn4->setText(QString::fromLocal8Bit("大佬"));
 	toolBtn4->setIcon(QPixmap(":/Widget/images/headportrait/4.jpg"));
 	//toolBtn4->setIconSize(QPixmap(":/Widget/images/headportrait/4.jpg").size());
-	toolBtn4->setIconSize(QSize(100, 100));
+	toolBtn4->setIconSize(head);
 	toolBtn4->setAutoRaise(true);
 	toolBtn4->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 
@@ -58,7 +60,7 @@ void Drawer::InitUI()
 	toolBtn5->setText(QString::fromLocal8Bit("卡卡罗特"));
 	toolBtn5->setIcon(QPixmap(":/Widget/images/headportrait/5.jpg"));
 	//toolBtn5->setIconSize(QPixmap(":/Widget/images/headportrait/5.jpg").size());
-	toolBtn5->setIconSize(QSize(100, 100));
+	toolBtn5->setIconSize(head);
 	toolBtn5->setAutoRaise(true);
 	toolBtn5->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 
@@ -66,7 +68,7 @@ void Drawer::InitUI()
 	toolBtn6->setText(QString::fromLocal8Bit("路飞"));
 	toolBtn6->setIcon(QPixmap(":/Widget/images/headportrait/6.jpg"));
 	//toolBtn6->setIconSize(QPixmap(":/Widget/images/headportrait/6.jpg").size());
-	toolBtn6->setIconSize(QSize(100, 100));
+	toolBtn6->setIconSize(head);
 	toolBtn6->setAutoRaise(true);
 	toolBtn6->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 
@@ -74,7 +76,7 @@ void Drawer::InitUI()
 	toolBtn7->setText(QString::fromLocal8Bit("旋涡鸣人"));
 	toolBtn7->setIcon(QPixmap(":/Widget/images/headportrait/7.jpg"));
 	//toolBtn7->setIconSize(QPixmap(":/Widget/images/headportrait/7.jpg").size());
-	toolBtn7->setIconSize(QSize(100, 100));
+	toolBtn7->setIconSize(head);
 	toolBtn7->setAutoRaise(true);
 	toolBtn7->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 
@@ -82,7 +84,7 @@ void Drawer::InitUI()
 	toolBtn8->setText(QString::fromLocal8Bit("多弗朗明哥"));
 	toolBtn8->setIcon(QPixmap(":/Widget/images/headportrait/8.jpg"));
 	//toolBtn8->setIconSize(QPixmap(":/Widget/images/headportrait/8.jpg").size());
-	toolBtn8->setIconSize(QSize(100, 100));
+	toolBtn8->setIconSize(head);
 	toolBtn8->setAutoRaise(true);
 	toolBtn8->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 
@@ -90,7 +92,7 @@ void Drawer::InitUI()
 	toolBtn9->setText(QString::fromLocal8Bit("黑神话悟空"));
 	toolBtn9->setIcon(QPixmap(":Widget/images/headportrait/9.png"));
 	//toolBtn9->setIconSize(QPixmap(":Widget/images/headportrait/9.png").size());
-	toolBtn9->setIconSize(QSize(100, 100));
+	toolBtn9->setIconSize(head);
 	toolBtn9->setAutoRaise(true);
 	toolBtn9->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 
