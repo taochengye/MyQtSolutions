@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SellManager", "SellManager\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MySelfQQ", "MySelfQQ\MySelfQQ.vcxproj", "{3AA55A6A-6079-416F-B269-6874CF6D9AC9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LEQ", "LEQ\LEQ.vcxproj", "{CABB64A1-8BC4-4DA3-913E-219D6CE4D2BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,10 @@ Global
 		{3AA55A6A-6079-416F-B269-6874CF6D9AC9}.Debug|x64.Build.0 = Debug|x64
 		{3AA55A6A-6079-416F-B269-6874CF6D9AC9}.Release|x64.ActiveCfg = Release|x64
 		{3AA55A6A-6079-416F-B269-6874CF6D9AC9}.Release|x64.Build.0 = Release|x64
+		{CABB64A1-8BC4-4DA3-913E-219D6CE4D2BC}.Debug|x64.ActiveCfg = Debug|x64
+		{CABB64A1-8BC4-4DA3-913E-219D6CE4D2BC}.Debug|x64.Build.0 = Debug|x64
+		{CABB64A1-8BC4-4DA3-913E-219D6CE4D2BC}.Release|x64.ActiveCfg = Release|x64
+		{CABB64A1-8BC4-4DA3-913E-219D6CE4D2BC}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
