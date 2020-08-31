@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>456</width>
-    <height>336</height>
+    <height>331</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -169,7 +169,7 @@
     <string>PushButton</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>340</x>
@@ -194,7 +194,7 @@
        </size>
       </property>
       <property name="text">
-       <string>...</string>
+       <string>设置</string>
       </property>
      </widget>
     </item>
@@ -213,7 +213,7 @@
        </size>
       </property>
       <property name="text">
-       <string>...</string>
+       <string>最小</string>
       </property>
      </widget>
     </item>
@@ -232,7 +232,7 @@
        </size>
       </property>
       <property name="text">
-       <string>...</string>
+       <string>关闭</string>
       </property>
      </widget>
     </item>

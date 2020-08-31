@@ -1,4 +1,7 @@
 <RCC>
-    <qresource prefix="LoginWgt">
+    <qresource prefix="/LoginWgt">
+        <file>images/主窗口图标/arrow_d.png</file>
+        <file>images/主窗口图标/arrow_r.png</file>
+        <file>images/主窗口图标/arrow_r_g.png</file>
     </qresource>
 </RCC>
