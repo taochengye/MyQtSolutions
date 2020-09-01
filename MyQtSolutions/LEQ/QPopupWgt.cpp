@@ -5,8 +5,8 @@ QPopupWgt::QPopupWgt(QWidget *parent)
 	: QWidget(parent)
 {
 	setMouseTracking(true);
-	
-	bool ret = connect(this, SIGNAL(QHoverEvent::GraphicsSceneHoverEnter), this, SLOT(changecolor()));
+	this->setAttribute(Qt::WA_Hover, true);//开启悬停事件
+	this->installEventFilter(this);       //安装事件过滤器
 }
 
 QPopupWgt::~QPopupWgt()
@@ -15,10 +15,33 @@ QPopupWgt::~QPopupWgt()
 }
 
 
-void QPopupWgt::changecolor()
+bool QPopupWgt::eventFilter(QObject *obj, QEvent *event)
 {
-	int i = 0;
+	if (event->type() == QEvent::HoverEnter) 
+	{
+		QPalette pal(this->palette());
+		pal.setColor(QPalette::Background, Qt::blue);
+		this->setAutoFillBackground(true);
+		this->setPalette(pal);
+
+		isMouseInWgt = true;
+		return true;
+	}
+	else if (event->type() == QEvent::HoverLeave)
+	{
+		QPalette pal(this->palette());
+		pal.setColor(QPalette::Background, Qt::red);
+		this->setAutoFillBackground(true);
+		this->setPalette(pal);
+
+		isMouseInWgt = true;
+		return true;
+	}
+	
+	return QWidget::eventFilter(obj, event);
 }
+
+
 
 
 void QPopupWgt::mouseMoveEvent(QMouseEvent * event)

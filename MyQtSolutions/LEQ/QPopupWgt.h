@@ -23,10 +23,11 @@ protected:
 	void contextMenuEvent(QContextMenuEvent * event);
 	void mouseMoveEvent(QMouseEvent * event);
 	void paintEvent(QPaintEvent *event);
+	bool eventFilter(QObject *obj, QEvent *event);
 
 private:
 	bool isMouseInWgt = false;
 
 private slots:
-	void changecolor();
+
 };
