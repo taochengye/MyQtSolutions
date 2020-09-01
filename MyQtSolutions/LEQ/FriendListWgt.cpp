@@ -13,11 +13,19 @@ FriendListWgt::~FriendListWgt()
 {
 }
 
+
 void FriendListWgt::InitUI()
 {
-	ui.friendListTreeWgt->header()->hide();
+
+	QPushButton test;
+	ui.pushButton_11->setIconSize(ui.pushButton_11->size());
+	ui.pushButton_11->setIcon(QIcon(":/LoginWgt/images/mainwindow/arrow_r.png"));
+
+	//ui.searchLineEdit->setIcon(QIcon(":/images/主窗口图标/arrow_r.png"));
+
 	setFriendListIcon();
 }
+
 
 void FriendListWgt::connectSlots()
 {
@@ -26,19 +34,15 @@ void FriendListWgt::connectSlots()
 	ret = connect(ui.spaceListBtn, SIGNAL(clicked()), this, SLOT(setStackWgtSpaceList()));
 }
 
+
 void FriendListWgt::setFriendListIcon()
 {
-	int iCount = ui.friendListTreeWgt->topLevelItemCount();
-	for (int i = 0; i < iCount; i++)
-	{
-		auto treeItem = ui.friendListTreeWgt->topLevelItem(i);
-		treeItem->setIcon(1, QPixmap(":/images/主窗口图标/arrow_r.png"));
-	}
 
-//	ui.treeWidget->setStyleSheet("QTreeView::branch:has-children:!has-siblings:closed,\
-//QTreeView::branch:closed:has-children:has-siblings{border-image: none; image: url(:/QtXmlTest/Resources/image/plus.png);}\
+
+//	ui.friendListTreeWgt->setStyleSheet("QTreeView::branch:has-children:!has-siblings:closed,\
+//QTreeView::branch:closed:has-children:has-siblings{border-image: none; image: url(:/LoginWgt/images/mainwindow/arrow_r.png);}\
 //QTreeView::branch:open:has-children:!has-siblings,\
-//QTreeView::branch:open:has-children:has-siblings{border-image: none; image: url(:/QtXmlTest/Resources/image/minus.png);}");
+//QTreeView::branch:open:has-children:has-siblings{border-image: none; image: url(:/LoginWgt/images/mainwindow/arrow_d.png);}");
 
 }
 

@@ -6,12 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>272</width>
+    <width>288</width>
     <height>679</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>FriendListWgt</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QTreeView::branch:closed:has-children:has-siblings,QTreeView::branch:closed:!has-children:!has-siblings{border-image: none; image: url(:/LoginWgt/images/mainwindow/arrow_r.png);}
+
+
+
+QTreeView::branch:open:has-children:!has-siblings,QTreeView::branch:open:has-children:has-siblings{border-image: none; image: url(:/LoginWgt/images/mainwindow/arrow_d.png);}</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="spacing">
@@ -112,12 +119,12 @@
        <string>天气</string>
       </property>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>40</x>
         <y>0</y>
-        <width>221</width>
+        <width>226</width>
         <height>32</height>
        </rect>
       </property>
@@ -260,7 +267,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -274,7 +281,7 @@
         <number>0</number>
        </property>
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QLineEdit" name="searchLineEdit"/>
        </item>
        <item>
         <widget class="QToolButton" name="toolButton">
@@ -300,6 +307,12 @@
          <height>0</height>
         </size>
        </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="text">
         <string>消息</string>
        </property>
@@ -313,6 +326,12 @@
          <height>0</height>
         </size>
        </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="text">
         <string>联系人</string>
        </property>
@@ -324,6 +343,12 @@
         <size>
          <width>90</width>
          <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
         </size>
        </property>
        <property name="text">
@@ -357,9 +382,6 @@
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_5">
-         <property name="spacing">
-          <number>0</number>
-         </property>
          <item>
           <widget class="QPushButton" name="pushButton_9">
            <property name="minimumSize">
@@ -375,7 +397,7 @@
             </size>
            </property>
            <property name="text">
-            <string>PushButton</string>
+            <string/>
            </property>
           </widget>
          </item>
@@ -394,7 +416,7 @@
             </size>
            </property>
            <property name="text">
-            <string>PushButton</string>
+            <string/>
            </property>
           </widget>
          </item>
@@ -414,37 +436,44 @@
         </layout>
        </item>
        <item>
-        <widget class="QTreeWidget" name="friendListTreeWgt">
-         <column>
-          <property name="text">
-           <string/>
-          </property>
-         </column>
-         <item>
-          <property name="text">
-           <string>朋友</string>
-          </property>
+        <widget class="QWidget" name="widget_3" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>270</width>
+           <height>0</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
           <item>
-           <property name="text">
-            <string>1</string>
-           </property>
+           <widget class="QWidget" name="widget_2" native="true">
+            <widget class="QPopupWgt" name="popUpWgt" native="true">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>270</width>
+               <height>25</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>270</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+            </widget>
+           </widget>
           </item>
-         </item>
-         <item>
-          <property name="text">
-           <string>兄弟</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>同事</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>家人</string>
-          </property>
-         </item>
+         </layout>
         </widget>
        </item>
       </layout>
@@ -565,6 +594,14 @@
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QPopupWgt</class>
+   <extends>QWidget</extends>
+   <header>QPopupWgt.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

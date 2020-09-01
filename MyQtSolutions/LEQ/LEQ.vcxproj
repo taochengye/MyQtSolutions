@@ -85,6 +85,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="QPopupWgt.cpp" />
     <QtRcc Include="LoginWgt.qrc" />
     <QtUic Include="FriendListWgt.ui" />
     <QtUic Include="LoginWgt.ui" />
@@ -95,6 +96,9 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="FriendListWgt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="QPopupWgt.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

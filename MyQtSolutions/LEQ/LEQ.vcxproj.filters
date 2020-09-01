@@ -44,9 +44,15 @@
     <ClCompile Include="FriendListWgt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="QPopupWgt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="FriendListWgt.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="QPopupWgt.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
